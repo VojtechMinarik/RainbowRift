@@ -11,7 +11,7 @@ float modScaleModifier;
 color[] colors = {#ff595e,#ff924c,#ffca3a,#c5ca30,#8ac926,#36949d,#1982c4,#4267ac,#565aa0,#6a4c93};
 
 void setup() {
-  size(1920, 1080);
+  size(1080, 1920);
   strokeWeight(1); 
   noFill();
 
@@ -25,7 +25,7 @@ void draw() {
   background(5);
   noiseMax = 3; // Smoothness of the curve
   //modScale = 1*map(analyzer.analyze(),0,1,0,500); // Height of the curve
-  modScale = 25*map(analyzer.analyze(),0,1,1,30); // Height of the curve
+  modScale = 25*map(analyzer.analyze(),0,1,1,35); // Height of the curve
   modScaleModifier = 1.5; // Change of heigth between curves
   float addphase = map(analyzer.analyze(),0,1,0.01,0.06);
 
